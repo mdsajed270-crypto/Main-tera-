@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Tubu 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+min-height:100vh;
+overflow-x:hidden;
+color:white;
+position:relative;
+}
+
+/* Floating particles */
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+opacity:0.15;
+animation:float linear infinite;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:0;
+}
+20%{
+opacity:0.2;
+}
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+}
+
+/* Container */
+
+.container{
+width:100%;
+max-width:900px;
+margin:auto;
+padding:30px 20px 80px;
+position:relative;
+z-index:2;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding-top:40px;
+animation:fade 1.2s ease;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#cbd5e1;
+font-size:1.1rem;
+}
+
+.glow{
+color:#fda4af;
+text-shadow:0 0 15px rgba(253,164,175,0.6);
+}
+
+/* Cards */
+
+.card{
+margin-top:35px;
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+border-radius:28px;
+padding:30px;
+box-shadow:0 10px 40px rgba(0,0,0,0.35);
+animation:fade 1.4s ease;
+}
+
+.section-title{
+font-size:1.4rem;
+margin-bottom:18px;
+color:#fde68a;
+}
+
+.message{
+line-height:2;
+font-size:1.05rem;
+color:#f8fafc;
+}
+
+.love-text{
+margin-top:25px;
+font-size:1.2rem;
+font-weight:600;
+line-height:2;
+text-align:center;
+color:#fbcfe8;
+}
+
+/* Audio */
+
+audio{
+width:100%;
+margin-top:15px;
+border-radius:15px;
+}
+
+/* Memory Grid */
+
+.memory-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.memory{
+background:rgba(255,255,255,0.05);
+padding:18px;
+border-radius:20px;
+text-align:center;
+transition:0.3s ease;
+}
+
+.memory:hover{
+transform:translateY(-5px);
+background:rgba(255,255,255,0.08);
+}
+
+.memory span{
+font-size:2rem;
+display:block;
+margin-bottom:10px;
+}
+
+/* Quote */
+
+.quote{
+font-size:1.3rem;
+font-style:italic;
+text-align:center;
+padding:20px;
+line-height:1.9;
+color:#fbcfe8;
+}
+
+/* Buttons */
+
+.buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+button{
+padding:14px 28px;
+border:none;
+border-radius:999px;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+transition:0.3s ease;
+}
+
+.primary{
+background:white;
+color:#0f172a;
+}
+
+.secondary{
+background:rgba(255,255,255,0.08);
+color:white;
+border:1px solid rgba(255,255,255,0.12);
+}
+
+button:hover{
+transform:scale(1.06);
+}
+
+/* Hidden messages */
+
+.hidden-message{
+display:none;
+margin-top:25px;
+text-align:center;
+font-size:1.15rem;
+line-height:1.8;
+color:#fde68a;
+animation:fade 1s ease;
+}
+
+/* Footer */
+
+.footer{
+text-align:center;
+margin-top:40px;
+color:#94a3b8;
+font-size:0.95rem;
+}
+
+/* Animations */
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:2.7rem;
+}
+
+.card{
+padding:22px;
+}
+
+.message{
+font-size:0.96rem;
+}
+
+.quote{
+font-size:1.05rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+
+<div class="hero">
+<h1>Sorry <span class="glow">Tubu</span> 🤍</h1>
+<p>From your overthinking Spidey 🫠</p>
+</div>
+
+<!-- SONG -->
+
+<div class="card">
+
+<div class="section-title">A Song For You 🎵</div>
+
+<audio controls autoplay loop>
+<source src="mera-basera.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+<p style="margin-top:15px; color:#cbd5e1;">
+Every time this song plays, it reminds me of you 🤍
+</p>
+
+</div>
+
+<!-- APOLOGY -->
+
+<div class="card">
+
+<div class="section-title">A Small Confession</div>
+
+<div class="message">
+
+I know today became emotionally messy...  
+and maybe I made you feel exhausted with all my overthinking.
+<br><br>
+
+But honestly, I only reacted that way because losing your attention even for a little while feels weird to me.
+<br><br>
+
+I know you need space sometimes.  
+I know you get tired too.  
+And I should've understood that better instead of making you feel guilty.
+<br><br>
+
+You are genuinely important to me.  
+Not because you're my “bestie” — but because you're <b>you</b>.
+<br><br>
+
+No more unnecessary drama from my side 😭  
+No more “new bestie” taunts.  
+Bas ek promise — I'll try to understand you better.
+
+<div class="love-text">
+
+I love you. 🤍  
+I loved you today.  
+I'll love you tomorrow.  
+I'll love you every single year.  
+And somehow...  
+I just keep loving you more.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- THINGS I LIKE -->
+
+<div class="card">
+
+<div class="section-title">Things I Like About You</div>
+
+<div class="memory-grid">
+
+<div class="memory">
+<span>🫠</span>
+Your dramatic texts
+</div>
+
+<div class="memory">
+<span>🤍</span>
+The way you care secretly
+</div>
+
+<div class="memory">
+<span>🙃</span>
+Your random mood swings
+</div>
+
+<div class="memory">
+<span>🕷️</span>
+Calling me Spidey
+</div>
+
+<div class="memory">
+<span>🌙</span>
+Late night talks
+</div>
+
+<div class="memory">
+<span>✨</span>
+Just your presence
+</div>
+
+</div>
+
+</div>
+
+<!-- QUOTE -->
+
+<div class="card">
+
+<div class="quote">
+
+“Maybe I overthink because I care too deeply.”  
+<br><br>
+
+All I want to say is... 🤍
+<br><br>
+
+<b>
+Musafir main bhatka,  
+tu mera basera...  
+main tera, main tera.
+</b>
+
+</div>
+
+<div class="buttons">
+
+<button class="primary" onclick="forgive()">
+Click if you forgive me 🙃
+</button>
+
+<button class="secondary" onclick="hug()">
+Virtual Hug 🤍
+</button>
+
+</div>
+
+<div class="hidden-message" id="message">
+YAYYYY 🤍<br>
+Now no more sadness okay?  
+Take care of your headache and sleep properly 🫶
+</div>
+
+<div class="hidden-message" id="hugmsg">
+⊂(･ω･*⊂)
+<br><br>
+Spidey sent you a hug 🕷️🤍
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+Made with overthinking + affection 🤍
+</div>
+
+</div>
+
+<script>
+
+/* Buttons */
+
+function forgive(){
+document.getElementById("message").style.display = "block";
+}
+
+function hug(){
+document.getElementById("hugmsg").style.display = "block";
+}
+
+/* Floating particles */
+
+for(let i = 0; i < 40; i++){
+
+let heart = document.createElement("div");
+heart.classList.add("heart");
+
+heart.innerHTML = ["🤍","✨","🫶","🌙"][Math.floor(Math.random()*4)];
+
+heart.style.left = Math.random()*100 + "vw";
+heart.style.animationDuration = (6 + Math.random()*8) + "s";
+heart.style.fontSize = (15 + Math.random()*22) + "px";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
